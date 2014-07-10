@@ -1,0 +1,9 @@
+{
+  "name": "strict-ssl3-config",
+  "title": "Strict ssl3 configuration",
+  "id": "jid1-EcqCC66ZJiXiaA",
+  "description": "Toggle between default and strict configuration for security.ssl3 preferences.",
+  "author": "Marco Bonetti <sid77@slackware.it>",
+  "license": "MPL 2.0",
+  "version": "0.1"
+}
