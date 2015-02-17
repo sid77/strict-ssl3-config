@@ -1,12 +1,13 @@
 var prefs = require("sdk/preferences/service");
-var main = require("./main");
+var self = require("sdk/self");
+var utils = require("./utils");
 
 /**
- * Test that whitelisted preferences are set true upon starting Firefox and
- * everything else is set false.
+ * Test that whitelisted preferences are set true and everything else is set
+ * false. Then test preferences reset.
  *
  */
-exports["test main"] = function(assert) {
+exports["test utils"] = function(assert) {
   // Get security.ssl3 keys
   var keys = prefs.keys("security.ssl3.");
 
@@ -26,6 +27,16 @@ exports["test main"] = function(assert) {
   assert.equal(prefs.get("security.ssl.treat_unsafe_negotiation_as_broken"), true);
   keys.forEach(function(key) {
     assert.equal(prefs.get(key), !(whitelist.indexOf(key) === -1));
+  });
+
+  // Reset preferences
+  utils.toggleAllPreferences();
+
+  // Test Firefox defaults value
+  assert.equal(prefs.get("security.ssl.require_safe_negotiation"), false);
+  assert.equal(prefs.get("security.ssl.treat_unsafe_negotiation_as_broken"), false);
+  keys.forEach(function(key) {
+    assert.equal(prefs.get(key), true);
   });
 };
 
