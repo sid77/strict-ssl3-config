@@ -2,7 +2,7 @@
   "name": "strict-ssl3-config",
   "title": "Strict SSL3 configuration",
   "id": "jid1-EcqCC66ZJiXiaA",
-  "description": "Toggle between default and strict configuration for security.ssl3 preferences. In strict mode, only a subset of security.ssl3 preferences is enabled. Current behaviour is to avoid 128 bit ciphers (except for ECDHE), RC4 and ECDSA. This add-on will also enable secure SSL/TLS renegotiation. If a website is using a suite of weak ciphers or doesn't support secure renegotiation it will fail to load.",
+  "description": "This add-on toggles between default and strict configurations for security.ssl3 preferences.\n\nIn default mode, all preferences are reset to their default value, while in strict mode, only whitelisted preferences are activated.\nCurrent behaviour is to avoid 128 bit ciphers (except for ECDHE), RC4 and ECDSA and to opt-in for secure SSL/TLS renegotiation.\n\nWebsites using only weak ciphers or unsafe renegotiation will fail to load.\n\nUsing stronger ciphers only will likely help your security posture but, if anonymity is important for you, please be aware that a website can more easily fingerprint your browser due to the reduced ciphers suite in use.",
   "author": "Marco Bonetti <sid77@slackware.it>",
   "license": "MPL 2.0",
   "version": "0.2"
