@@ -18,12 +18,12 @@ exports["test utils"] = function(assert) {
     "security.ssl3.ecdhe_rsa_aes_128_gcm_sha256",
   ];
 
-  preferencesSSL3 = prefs.keys("security.ssl3.");
-  preferencesSSL = prefs.keys("security.ssl.require_safe_negotiation");
+  var preferencesSSL3 = prefs.keys("security.ssl3.");
+  var preferencesSSL = prefs.keys("security.ssl.require_safe_negotiation");
   preferencesSSL = preferencesSSL.concat(
       prefs.keys("security.ssl.treat_unsafe_negotiation_as_broken")
   );
-  preferences = preferencesSSL.concat(preferencesSSL3);
+  var preferences = preferencesSSL.concat(preferencesSSL3);
 
   // test strict mode
   utils.initPreferences();
