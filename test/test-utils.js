@@ -1,6 +1,6 @@
 var prefs = require("sdk/preferences/service");
 var self = require("sdk/self");
-var utils = require("./utils");
+var utils = require("../lib/utils");
 
 /**
  * Test that whitelisted preferences are set true and everything else is set
