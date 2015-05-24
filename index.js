@@ -3,7 +3,7 @@
  *
  */
 var ui = require("sdk/ui");
-var utils = require("./utils");
+var utils = require("./lib/utils");
 
 /**
  * Main
