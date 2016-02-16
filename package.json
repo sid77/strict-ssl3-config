@@ -1,7 +1,7 @@
 {
   "title": "Strict SSL3 Configuration",
   "name": "strict-ssl3-config",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "This add-on toggles between default and strict configurations for security.ssl3 preferences.\n\nIn default mode, all preferences are reset to their default value, while in strict mode, only whitelisted preferences are activated.\nCurrent behaviour is to avoid 128 bit ciphers (except for ECDHE), RC4 and ECDSA and to opt-in for secure SSL/TLS renegotiation.\n\nWebsites using only weak ciphers or unsafe renegotiation will fail to load.\n\nUsing stronger ciphers only will likely help your security posture but, if anonymity is important for you, please be aware that a website can more easily fingerprint your browser due to the reduced ciphers suite in use.\n\nExtension source code available here: https://github.com/sid77/strict-ssl3-config .",
   "main": "index.js",
   "author": "Marco Bonetti <sid77@slackware.it>",
