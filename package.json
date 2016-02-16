@@ -10,5 +10,6 @@
     "fennec": ">=20.0"
   },
   "license": "MPL 2.0",
-  "id": "jid1-EcqCC66ZJiXiaA@jetpack"
+  "id": "jid1-EcqCC66ZJiXiaA@jetpack",
+  "icon": "resource://jid1-EcqCC66ZJiXiaA-at-jetpack/data/lock-locked-8x.png"
 }
