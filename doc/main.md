@@ -15,4 +15,5 @@ Using stronger ciphers only will likely help your security posture but, if
 anonymity is important for you, please be aware that a website can more easily
 fingerprint your browser due to the reduced ciphers suite in use.
 
-The padlock icon is a modified Tango! "emblem-readonly" icon.
+The padlock icons are taken from Open Iconic — https://useiconic.com/open they
+are released under the MIT license over at https://github.com/iconic/open-iconic
