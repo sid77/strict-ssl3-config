@@ -14,7 +14,6 @@ exports["test utils"] = function(assert) {
     "security.ssl.treat_unsafe_negotiation_as_broken",
     "security.ssl3.rsa_aes_256_sha",
     "security.ssl3.ecdhe_rsa_aes_256_sha",
-    "security.ssl3.rsa_des_ede3_sha",
     "security.ssl3.ecdhe_rsa_aes_128_gcm_sha256",
   ];
 
